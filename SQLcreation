@@ -1,0 +1,42 @@
+CREATE TABLE Persons
+(
+ID int NOT NULL AUTO_INCREMENT,
+PRIMARY KEY (ID),
+FirstName varchar(255),
+LastName varchar(255),
+Age int,
+HasHome boolean,
+HouseID int,
+GroupID int,
+Hobbies varchar(128),
+DegreeID int,
+YearOfStudy varchar(2),
+Description varchar(2048),
+Gender boolean,
+Cleanliness int,
+SocialFactor int
+);
+
+CREATE TABLE Groups(
+GroupID int,
+Size int,
+)
+
+CREATE TABLE Degrees
+(
+DegreeID int,
+DegreeName varchar(128),
+)
+
+CREATE TABLE HOUSE(
+HouseID int NOT NULL AUTO_INCREMENT,
+PRIMARY KEY(HouseID),
+Capacity int,
+FilledCapacity int,
+Type varchar(64),
+Address varchar(255),
+Postcode varchar(255),
+Price float,
+GenderRestriction int,
+ContractLength int
+)

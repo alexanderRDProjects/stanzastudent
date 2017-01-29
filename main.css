@@ -1,0 +1,218 @@
+body
+{
+	font-family:sans-serif;
+	background-color:#F1EFEF;
+	background-image:url("mainbackground.png");
+	background-position:bottom;
+	background-size:cover;
+	background-repeat:no-repeat;
+	margin:0;
+
+	color:#646464;
+
+	position:absolute;
+	left:0;
+	right:0;
+	overflow:hidden;
+}
+
+#header
+{
+	background-color:#5362F9;
+	background-color:linear-gradient(to right, #5362F9, #5143E6);
+
+	background-image:url("stanza.png");
+	background-repeat: no-repeat;
+	background-size: auto 25px;
+	background-position-y: center;
+	background-position-x: 20px;
+
+	color:#FFF;
+
+	position:fixed;
+	height:50px;
+	left:0;
+	right:0;
+	top:0;
+
+	text-align:right;
+
+	padding-right:20px;
+}
+
+#header_title
+{
+	position:absolute;
+	font-size:10pt;
+	left:180px;
+	top:17px;
+}
+
+#header_btns
+{	
+	display:inline-block;
+	margin-top:12px;
+	vertical-align: middle;
+}
+
+#header button
+{
+	background-color:inherit;
+	color:inherit;
+
+	height:25px;
+
+	padding:3px 20px 3px 20px;
+	border-radius:20px;
+	border:2px solid #FFF;
+
+	transition:background-color 0.1s;
+	transition:color 0.1s;
+}
+
+#header button:hover
+{
+	background:#FFF;
+	color:#000;
+}
+
+#header_infobar
+{
+	height:40px;
+	background-color: #FFF;
+	position:absolute;
+	bottom:-40px;
+	left:0;
+	right:0;
+	text-align:left;
+}
+
+#header_infotainer
+{
+	display:block;
+	margin:0 auto;
+	width:600px;
+	height:40px;
+	vertical-align:middle;
+	line-height:40px;
+	font-size:7pt;
+	font-weight:700;
+	color:#646464;
+}
+
+#infobar_title
+{
+	float:left;
+}
+
+#infobar_title #num_results
+{
+	font-size:10pt;
+}
+
+#infobar_controls
+{
+	float:right;
+}
+
+#infobar_controls button
+{
+	font-size:10pt;
+	font-weight:700;
+
+	height:100%;
+	display:inline-block;
+	border-radius:0;
+
+	padding-left:20	px;
+	padding-right:20px;
+	border:none;
+}
+
+#infobar_controls button:hover
+{
+	background:#F7F7F7;
+}
+
+#content_container
+{
+	width:720px;
+	margin:0 auto;
+	margin-top:115px;
+}
+
+.card
+{
+	padding:10px;
+	background:#FFF;
+}
+
+.card_house div:first-child
+{
+	margin-left:0;
+}
+
+.card_house > div
+{
+	display:inline-block;
+
+	margin-left:10px;
+	margin-right:10px;
+
+	height:100%;
+
+	vertical-align: bottom;
+}
+
+.card_house
+{
+	width:100%;
+	height:150px;
+}
+
+.card_house h2, h3
+{
+	margin-top:0;
+	font-size:12pt;
+}
+
+.card_house h2
+{
+	color:#3F37DE;
+}
+
+.card_house_image
+{
+	width:230px;
+	height:100%;
+
+	background-size:cover;
+	background-position: center;
+}
+
+.card_house_data
+{
+	width:200px;
+	border-right:1px solid #CBCBCB;
+	font-weight:700;
+}
+
+.card_house_price, .card_house_spaces
+{
+	font-size:16pt;
+}
+
+.card_house_price
+{
+	color:#CA1E1E;
+}
+
+.card_house_spaces
+{
+	color:#1F821D;
+}
+
+.card_house_address
+{
+	margin-bottom:0;
+}

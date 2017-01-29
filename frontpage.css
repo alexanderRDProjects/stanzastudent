@@ -1,0 +1,179 @@
+body
+{
+	font-family:sans-serif;
+	background-color:#F1EFEF;
+	background-image:url("background.png");
+	background-position:bottom;
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin:0;
+
+	position:absolute;
+	left:0;
+	right:0;
+	overflow:hidden;
+}
+
+#background_blue
+{
+	background-color:#5362F9;
+	background-color:linear-gradient(to right, #5362F9, #5143E6);
+
+	background-image:url("House.png");
+	background-position:center 10px;
+	background-size:80%;
+	background-repeat:no-repeat;
+
+	position:absolute;
+	height:345px;
+	left:0;
+	right:0;
+	top:0;
+
+	z-index:-50;
+}
+
+#header
+{
+	height:50px;
+	width:700px;
+	margin:0 auto;
+	margin-bottom:60px;
+	margin-top:20px;
+
+	background-image:url("stanza.png");
+	background-size:150px;
+	background-position:center;
+	background-repeat:no-repeat;
+	color:#FFF;
+	
+	position:relative;
+}
+
+#header button
+{
+	background-color:inherit;
+	color:inherit;
+
+	position:absolute;
+	right:0;
+	top:5px;
+
+	padding:3px 20px 3px 20px;
+	border-radius:20px;
+	border:2px solid #FFF;
+
+	transition:background-color 0.1s;
+	transition:color 0.1s;
+}
+
+#header button:hover
+{
+	background:#FFF;
+	color:#000;
+}
+
+.card
+{
+	background:#FFF;
+	color:#646464;
+	border-radius:12.5px;
+	width:600px;
+	height:200px;
+	padding-top:50px;
+	line-height:250px;
+
+	position:absolute;
+	left:100%;
+
+	display:block;
+
+	text-align:center;
+}
+
+.card:after
+{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	
+	content:"";
+
+	height:100%;
+
+	border-radius:12.5px;
+
+	box-shadow:0px 0px 20px #888;
+
+	z-index:-99;
+}
+
+.card_container
+{
+	display:inline-block;
+	vertical-align: middle;
+	line-height:normal;
+	width:100%;
+}
+
+.card_current, .card_hidden
+{
+	transition: left 1s;
+}
+
+.card_hidden
+{
+	display:none;
+}
+
+.card_superhead
+{
+	font-size:10pt;
+	margin-bottom:30px;
+}
+
+.card_head
+{
+	font-size:14pt;
+	margin-bottom:30px;
+}
+
+.card .btn_next
+{
+	border:none;
+	width:40px;
+	background-image:url("Arrow.png");
+	background-position: center;
+	background-size:50%;
+	background-repeat:no-repeat;
+}
+
+.card input, .card button
+{
+	background:inherit;
+	color:inherit;
+
+	border-radius:25px;
+	border:2px solid #D2D2D2;
+	padding:10px 12.5px 10px 12.5px;
+
+	width:200px;
+	height:40px;
+
+	margin-left:10px;
+	margin-right:10px;
+
+	transition:background-color 0.1s;
+	vertical-align: middle;
+}
+
+.card input
+{
+	width:75px;
+}
+
+.card button:hover
+{
+	background-color:#D2D2D2;	
+}
